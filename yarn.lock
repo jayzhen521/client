@@ -141,6 +141,16 @@ angular-toastr@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/angular-toastr/-/angular-toastr-1.7.0.tgz#7fdf9ef61cb4abee7a8818eb3d9798c057d4eb7f"
 
+angular-translate@^2.17.0:
+  version "2.18.1"
+  resolved "http://registry.npm.taobao.org/angular-translate/download/angular-translate-2.18.1.tgz#b29ed0d2f9bac44075e7aad3284166c59e150791"
+  dependencies:
+    angular ">=1.2.26 <=1.7"
+
+"angular@>=1.2.26 <=1.7":
+  version "1.7.0"
+  resolved "http://registry.npm.taobao.org/angular/download/angular-1.7.0.tgz#e45d679fc8d81040a4894c7ccc16a4e1ad0a9ca6"
+
 angular@^1.6.9:
   version "1.6.10"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.10.tgz#eed3080a34d29d0f681ff119b18ce294e3f74826"

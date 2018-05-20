@@ -5,7 +5,7 @@
      href="#"
      ng-class="{'is-selected': vm.selectedTab === vm.TAB_ANNOTATIONS}"
      h-on-touch="vm.selectTab(vm.TAB_ANNOTATIONS)">
-    Annotations
+    {{ 'Annotations' | translate}}
     <span class="selection-tabs__count"
       ng-if="vm.totalAnnotations > 0 && !vm.isWaitingToAnchorAnnotations">
       {{ vm.totalAnnotations }}
@@ -15,7 +15,7 @@
      href="#"
      ng-class="{'is-selected': vm.selectedTab === vm.TAB_NOTES}"
      h-on-touch="vm.selectTab(vm.TAB_NOTES)">
-    Page Notes
+    {{ 'Page Notes' | translate }}
     <span class="selection-tabs__count"
       ng-if="vm.totalNotes > 0 && !vm.isWaitingToAnchorAnnotations">
       {{ vm.totalNotes }}
@@ -39,22 +39,22 @@
 <div ng-if="!vm.isLoading()" class="selection-tabs__empty-message">
   <div ng-if="vm.showNotesUnavailableMessage()"  class="annotation-unavailable-message">
     <p class="annotation-unavailable-message__label">
-      There are no page notes in this group.
+      {{ 'There are no page notes in this group.' | translate }}
       <br />
       <div ng-if="!vm.enableExperimentalNewNoteButton && !vm.showSidebarTutorial()" class="annotation-unavailable-message__tutorial">
-        Create one by clicking the
+        {{ 'Create one by clicking the' | translate }}
         <i class="help-icon h-icon-note"></i>
-        button.
+        {{ 'button.' | translate }}
       </div>
     </p>
   </div>
   <div ng-if="vm.showAnnotationsUnavailableMessage()"  class="annotation-unavailable-message">
     <p class="annotation-unavailable-message__label">
-      There are no annotations in this group.
+      {{ 'There are no annotations in this group.' | translate }}
       <br />
       <div ng-if="!vm.showSidebarTutorial()" class="annotation-unavailable-message__tutorial">
-        Create one by selecting some text and clicking the
-        <i class="help-icon h-icon-annotate"></i> button.
+        {{ 'Create one by selecting some text and clicking the' | translate }}
+        <i class="help-icon h-icon-annotate"></i> {{ 'button.' | translate }}
       </div>
     </p>
   </div>
