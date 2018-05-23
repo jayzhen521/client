@@ -1,5 +1,6 @@
 'use strict';
 
+const baseURI = require('document-base-uri');
 const { normalizeURI } = require('../util/url');
 
 /**
@@ -108,7 +109,8 @@ function fingerprintToURN(fingerprint) {
 }
 
 function getPDFURL(app) {
-  const url = normalizeURI(app.url);
+  // const url = normalizeURI(app.url);
+  const url = baseURI;
 
   // Local file:// URLs should not be saved in document metadata.
   // Entries in document.link should be URIs. In the case of
